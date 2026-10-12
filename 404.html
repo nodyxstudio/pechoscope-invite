@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PêchoScope</title>
+<script>
+  // go.nodyxstudio.xyz/JULIEN → go.nodyxstudio.xyz/?JULIEN
+  var code = location.pathname.replace(/^\/+|\/+$/g, '').replace(/[^A-Za-z0-9_]/g, '').slice(0, 20);
+  location.replace('/' + (code.length >= 3 ? '?' + code.toUpperCase() : ''));
+</script>
+</head>
+<body></body>
+</html>
